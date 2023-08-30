@@ -51,7 +51,7 @@ export class AgregarComponent implements OnInit {
 
   ngOnInit(): void {
 
-    if( this.router.url.includes('editar')){ // SI la URL tiene editar realizo el ActivatedRoute.params, esto para quitar el error cuando se esta agregando un heroe que no tiene un ID aun establecido  
+    if( this.router.url && this.router.url.includes('editar')){ // SI la URL tiene editar realizo el ActivatedRoute.params, esto para quitar el error cuando se esta agregando un heroe que no tiene un ID aun establecido  
 
       this.ActivatedRoute.params  /*ActivatedRoute.params me devuelve un Observable que me lee los cambios de los paramtros de la URL*/
       .pipe(
