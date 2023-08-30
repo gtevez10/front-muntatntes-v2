@@ -23,7 +23,7 @@ export class AgregarComponent implements OnInit {
 
   publishers = [
     {
-      id: 'DC Comics',
+      id: 'DC Comicss',
       desc: 'DC - Comics'
     },
 
