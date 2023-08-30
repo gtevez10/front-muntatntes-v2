@@ -34,7 +34,7 @@ export class HeroesService {
 
   /*Peticion POST para AGREGAR , La consumo en agregar.component*/
 
-  agregarHeroe( heroe:Heroe ){
+  agregarHeroe( heroe:Heroe ): Observable<Heroe>{
     return this.http.post<Heroe>(`${ this.baseUrl }/heroes`, heroe)
   }
 
